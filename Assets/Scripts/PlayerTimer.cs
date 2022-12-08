@@ -22,4 +22,13 @@ public class PlayerTimer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         TimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+    public void Pause()
+    {
+        if (TimerIsRunning)
+            TimerIsRunning = false;
+        else
+            TimerIsRunning = true;
+
+    }
 }
