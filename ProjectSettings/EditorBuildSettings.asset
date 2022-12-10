@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 886652271fd2afe4cae0c79a663be3a3
+  - enabled: 1
+    path: Assets/Scenes/EDHClock.unity
+    guid: fd1a0d5bcb5f1db4cb2a4e96e4435de1
   m_configObjects: {}
