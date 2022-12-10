@@ -1886,13 +1886,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143899545}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 393ff49ba8e52c0458fff5a99608e7be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   edgeThickness: 10
-  cornerRadius: 20
   offset: 5
   color: {r: 0, g: 0.8039216, b: 0.9372549, a: 1}
 --- !u!114 &2143899548
