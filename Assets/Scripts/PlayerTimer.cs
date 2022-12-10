@@ -9,9 +9,9 @@ public class PlayerTimer : MonoBehaviour
     public float TimeRemaining { get; set; }
     public bool TimerIsRunning { get; set; }
 
-    public PlayerTimer()
+    public void Start()
     {
-        TimeRemaining = 1800;
+        TimeRemaining = PlayerPrefs.GetInt("TimeLimit");
         TimerIsRunning = false;
     }
 
