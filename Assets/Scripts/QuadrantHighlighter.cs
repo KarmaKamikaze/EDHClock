@@ -1,17 +1,24 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class QuadrantHighlighter : MonoBehaviour
 {
-    public bool highlightTopLeft = false;
-    public bool highlightTopRight = false;
-    public bool highlightBottomLeft = false;
-    public bool highlightBottomRight = false;
+    public bool highlightTopLeft { get; set; } = false;
+    public bool highlightTopRight { get; set; } = false;
+    public bool highlightBottomLeft { get; set; } = false;
+    public bool highlightBottomRight { get; set; } = false;
+    public int offset = 10;
 
     public Color highlightColor = Color.yellow;
 
+    public int sortingOrder = 0;
+
     void OnGUI()
     {
+        // set the sorting order of the GUI
+        GUI.depth = sortingOrder;
+
         // get the width and height of the screen
         int width = Screen.width;
         int height = Screen.height;
@@ -29,25 +36,25 @@ public class QuadrantHighlighter : MonoBehaviour
         // set the color of the GUI
         GUI.color = highlightColor;
 
-        // highlight the top-left quardrant if the highlightTopLeft variable is true
+        // highlight the top-left quadrant if the highlightTopLeft variable is true
         if (highlightTopLeft)
         {
             EditorGUI.DrawRect(new Rect(topLeftX, topLeftY, width / 2, height / 2), highlightColor);
         }
 
-        // highlight the top-right quardrant if the highlightTopRight variable is true
+        // highlight the top-right quadrant if the highlightTopRight variable is true
         if (highlightTopRight)
         {
             EditorGUI.DrawRect(new Rect(topRightX, topRightY, width / 2, height / 2), highlightColor);
         }
 
-        // highlight the bottom-left quardrant if the highlightBottomLeft variable is true
+        // highlight the bottom-left quadrant if the highlightBottomLeft variable is true
         if (highlightBottomLeft)
         {
             EditorGUI.DrawRect(new Rect(bottomLeftX, bottomLeftY, width / 2, height / 2), highlightColor);
         }
 
-        // highlight the bottom-right quardrant if the highlightBottomRight variable is true
+        // highlight the bottom-right quadrant if the highlightBottomRight variable is true
         if (highlightBottomRight)
         {
             EditorGUI.DrawRect(new Rect(bottomRightX, bottomRightY, width / 2, height / 2), highlightColor);

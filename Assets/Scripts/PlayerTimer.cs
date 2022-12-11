@@ -25,10 +25,6 @@ public class PlayerTimer : MonoBehaviour
 
     public void Pause()
     {
-        if (TimerIsRunning)
-            TimerIsRunning = false;
-        else
-            TimerIsRunning = true;
-
+        TimerIsRunning = !TimerIsRunning;
     }
 }

@@ -5,9 +5,13 @@ public class ScreenDivider : MonoBehaviour
     public int thickness = 1; // thickness of the screen dividers
     public int offset = 0; // offset of the screen dividers from the sides of the screen
     public Color color = Color.black; // color of the screen dividers
+    public int sortingOrder = 0;
 
     void OnGUI()
     {
+        // set the sorting order of the GUI
+        GUI.depth = sortingOrder;
+
         // set the color of the GUI
         GUI.color = color;
 

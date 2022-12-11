@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Highlighter
+    uniqueID: 353939279
+    locked: 0
+  - name: Clock Elements
+    uniqueID: 1468614041
+    locked: 0

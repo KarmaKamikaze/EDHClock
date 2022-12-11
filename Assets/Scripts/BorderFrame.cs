@@ -5,6 +5,7 @@ public class BorderFrame : MonoBehaviour
     public int edgeThickness = 10; // thickness of the border frame edges
     public int offset = 5; // offset of the border frame from the edges of the screen
     public Color color = Color.black; // color of the border frame
+    public int sortingOrder = 0;
 
     void OnGUI()
     {
@@ -13,6 +14,9 @@ public class BorderFrame : MonoBehaviour
 
     public void Draw()
     {
+        // set the sorting order of the GUI
+        GUI.depth = sortingOrder;
+
         // set the color of the GUI
         GUI.color = color;
 
