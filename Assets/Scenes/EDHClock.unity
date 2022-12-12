@@ -325,8 +325,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -343,13 +343,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 17.25
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 16
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 10, y: 0, z: 10, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -814,8 +814,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightTopLeft
-        m_Mode: 6
+        m_MethodName: SetTopLeft
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1142,8 +1142,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightTopRight
-        m_Mode: 6
+        m_MethodName: SetTopRight
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1266,7 +1266,7 @@ RectTransform:
   - {fileID: 1938225683}
   - {fileID: 6149548867751989836}
   m_Father: {fileID: 1347902675}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1332,7 +1332,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &941668663
 GameObject:
@@ -1521,8 +1521,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightBottomRight
-        m_Mode: 6
+        m_MethodName: SetBottomRight
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1582,6 +1582,108 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeText: {fileID: 1169386409}
+--- !u!1 &1116478388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1116478389}
+  - component: {fileID: 1116478392}
+  - component: {fileID: 1116478391}
+  - component: {fileID: 1116478390}
+  m_Layer: 8
+  m_Name: Framing Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1116478389
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116478388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1917125567}
+  - {fileID: 2143899546}
+  m_Father: {fileID: 1347902675}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1116478390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116478388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1116478391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116478388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1116478392
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116478388}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1169386407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,8 +2048,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightBottomLeft
-        m_Mode: 6
+        m_MethodName: SetBottomLeft
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2031,7 +2133,7 @@ GameObject:
   - component: {fileID: 1347902674}
   - component: {fileID: 1347902673}
   - component: {fileID: 1347902672}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2111,8 +2213,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1917125567}
-  - {fileID: 2143899546}
+  - {fileID: 1116478389}
   - {fileID: 777105200}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2213,7 +2314,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1347902675}
+  m_Father: {fileID: 1116478389}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2363,7 +2464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.68235296, b: 0.9372549, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2535,7 +2636,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1347902675}
+  m_Father: {fileID: 1116478389}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2953,7 +3054,7 @@ GameObject:
   - component: {fileID: 6148801944244948412}
   - component: {fileID: 6151329675903508000}
   - component: {fileID: 6331358932329828002}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2972,7 +3073,7 @@ GameObject:
   - component: {fileID: 6150962045523568812}
   - component: {fileID: 6331225485531314016}
   - component: {fileID: 6148918819874874962}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2990,7 +3091,7 @@ GameObject:
   - component: {fileID: 6148714956971621078}
   - component: {fileID: 6151903709666363876}
   - component: {fileID: 6328314138382274350}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3008,7 +3109,7 @@ GameObject:
   - component: {fileID: 6147793629949023182}
   - component: {fileID: 6151024875182249590}
   - component: {fileID: 7801623722742623244}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3026,7 +3127,7 @@ GameObject:
   - component: {fileID: 6149547090835704742}
   - component: {fileID: 6151109506114697912}
   - component: {fileID: 6331046883185313290}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3043,7 +3144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6149309865054092698}
   - component: {fileID: 6328296706133502476}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: ButtonGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3061,7 +3162,7 @@ GameObject:
   - component: {fileID: 6149518552525881448}
   - component: {fileID: 6151298131736789410}
   - component: {fileID: 289618872952928845}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3080,7 +3181,7 @@ GameObject:
   - component: {fileID: 6331123153026120812}
   - component: {fileID: 6151185292094934296}
   - component: {fileID: 6330971427298168008}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3097,7 +3198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6149548867751989836}
   - component: {fileID: 6148130210544429246}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: ResetPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3173,7 +3274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.07450981, g: 0.07450981, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3310,7 +3411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6470445616161203363}
   - component: {fileID: 6470445616161203364}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3358,7 +3459,7 @@ GameObject:
   - component: {fileID: 6470445616222764166}
   - component: {fileID: 6470445616222764184}
   - component: {fileID: 2978733089246783875}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3405,7 +3506,7 @@ GameObject:
   - component: {fileID: 6470445617535108411}
   - component: {fileID: 6470445617535108410}
   - component: {fileID: 6470445617535108409}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3526,7 +3627,7 @@ GameObject:
   - component: {fileID: 6470445617553682247}
   - component: {fileID: 6470445617553682265}
   - component: {fileID: 3153290356966744743}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3625,7 +3726,7 @@ GameObject:
   - component: {fileID: 6470445617782849058}
   - component: {fileID: 6470445617782849056}
   - component: {fileID: 6470445617782849071}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}

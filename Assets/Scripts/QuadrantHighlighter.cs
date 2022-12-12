@@ -60,4 +60,24 @@ public class QuadrantHighlighter : MonoBehaviour
             EditorGUI.DrawRect(new Rect(bottomRightX, bottomRightY, width / 2, height / 2), highlightColor);
         }
     }
+
+    public void SetTopLeft()
+    {
+        highlightTopLeft = !highlightTopLeft;
+    }
+
+    public void SetTopRight()
+    {
+        highlightTopRight = !highlightTopRight;
+    }
+
+    public void SetBottomLeft()
+    {
+        highlightBottomLeft = !highlightBottomLeft;
+    }
+
+    public void SetBottomRight()
+    {
+        highlightBottomRight = !highlightBottomRight;
+    }
 }
