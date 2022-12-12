@@ -826,7 +826,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightTopRight
+        m_MethodName: set_HighlightTopRight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -838,7 +838,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightBottomLeft
+        m_MethodName: set_HighlightBottomLeft
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -850,7 +850,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightBottomRight
+        m_MethodName: set_HighlightBottomRight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1130,7 +1130,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightTopLeft
+        m_MethodName: set_HighlightTopLeft
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1154,7 +1154,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightBottomLeft
+        m_MethodName: set_HighlightBottomLeft
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1166,7 +1166,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightBottomRight
+        m_MethodName: set_HighlightBottomRight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1485,7 +1485,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightTopLeft
+        m_MethodName: set_HighlightTopLeft
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1497,7 +1497,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightTopRight
+        m_MethodName: set_HighlightTopRight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1509,7 +1509,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightBottomLeft
+        m_MethodName: set_HighlightBottomLeft
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2024,7 +2024,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightTopLeft
+        m_MethodName: set_HighlightTopLeft
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2036,7 +2036,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightTopRight
+        m_MethodName: set_HighlightTopRight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2060,7 +2060,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1917125568}
         m_TargetAssemblyTypeName: QuadrantHighlighter, Assembly-CSharp
-        m_MethodName: set_highlightBottomRight
+        m_MethodName: set_HighlightBottomRight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
